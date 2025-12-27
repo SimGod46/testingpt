@@ -1,0 +1,236 @@
+:root {
+  --TextColorLight: #757575;
+  --Primary: #0077cb;
+  --Base: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Bliss Pro", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  background: #f3f3f3;
+  color: var(--TextColorLight);
+}
+
+.stage {
+  width: 1920px;
+  height: 1044px;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  background: var(--Base);
+}
+
+.stage__background {
+  position: absolute;
+  inset: 0;
+  width: 1886px;
+  height: 1025px;
+  object-fit: cover;
+}
+
+.stage__panel {
+  position: absolute;
+  left: 378px;
+  top: 329px;
+  width: 1508px;
+  height: 696px;
+  background: var(--Base);
+}
+
+.card {
+  position: absolute;
+  top: 439px;
+  width: 656px;
+  height: 530px;
+  padding: 24px 28px;
+  border-radius: 4.345px;
+  background: var(--Base);
+  box-shadow: 0 2.173px 18.467px 4.345px rgba(0, 0, 0, 0.1);
+}
+
+.card--left {
+  left: 471px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card--right {
+  left: 1154px;
+  width: 634px;
+}
+
+.card--right h2 {
+  margin: 0 0 24px;
+  color: var(--Primary);
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.chat-bubble {
+  background: #d9d9d9;
+  border-radius: 17.38px;
+  padding: 14px 18px;
+  border: 1px solid var(--Primary);
+}
+
+.chat-bubble p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.chat-bubble--tall {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.chat-bubble--xl {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.primary {
+  color: var(--Primary);
+  font-weight: 500;
+}
+
+.muted {
+  color: var(--TextColorLight);
+}
+
+.bank-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 8px 10px 0 20px;
+}
+
+.bank-info__row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.bank-info__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+}
+
+.bank-info__icon svg {
+  width: 100%;
+  height: 100%;
+  fill: var(--Primary);
+}
+
+.bank-info strong {
+  display: block;
+  font-size: 26px;
+  font-weight: 500;
+  color: var(--TextColorLight);
+}
+
+.bank-info span {
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--TextColorLight);
+}
+
+.navbar {
+  position: absolute;
+  left: 471px;
+  top: 338px;
+  width: 1317px;
+  height: 68px;
+  border-radius: 4.345px;
+  background: var(--Base);
+  box-shadow: 0 2.173px 18.467px 4.345px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar__track {
+  position: absolute;
+  left: 99px;
+  right: 99px;
+  height: 2px;
+  background: #b9b9b9;
+}
+
+.navbar__step {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #cfcfcf;
+  margin: 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  color: var(--Base);
+}
+
+.navbar__step--active {
+  background: var(--Primary);
+  border: 3px solid var(--Primary);
+  color: var(--Base);
+}
+
+.navbar__label {
+  position: absolute;
+  top: 8px;
+  font-size: 20px;
+  color: var(--TextColorLight);
+  background: var(--Base);
+  padding: 2px 8px;
+}
+
+.actions {
+  position: absolute;
+  top: 910px;
+  left: 499px;
+  right: 311px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button {
+  width: 149px;
+  height: 38px;
+  border-radius: 4.345px;
+  border: 1.086px solid #a6a6a6;
+  font-weight: 900;
+  font-size: 15px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.button--ghost {
+  background: var(--Base);
+  color: var(--TextColorLight);
+}
+
+.button--primary {
+  background: var(--Primary);
+  color: var(--Base);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.button__arrow {
+  font-size: 20px;
+  line-height: 1;
+}
